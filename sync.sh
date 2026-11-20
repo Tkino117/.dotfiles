@@ -2,10 +2,14 @@
 # dotfiles を stow でホームディレクトリにリンクする
 set -euo pipefail
 
-# ===== stow の対象外にするディレクトリ =====
+# ===== stow の対象外にするディレクトリ（リポジトリ直下の非パッケージ） =====
 IGNORE=(
     .git
     .bak
+    .claude
+    .vscode
+    docker
+    ref
 )
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
