@@ -1,0 +1,15 @@
+# ~/.config/starship.toml
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold yellow)"   # ノーマルモード中は向きと色が変わる
+
+[cmd_duration]
+min_time = 2_000                      # 2 秒以上かかったら所要時間を表示
+
+[hostname]
+ssh_only = true                       # SSH 先の Linux でだけホスト名を出す

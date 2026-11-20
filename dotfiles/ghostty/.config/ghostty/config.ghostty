@@ -1,0 +1,21 @@
+# テーマ
+# theme = Catppuccin Mocha
+
+# フォント
+font-size = 11
+
+# 背景
+background = #0f0f0f
+window-theme = ghostty
+background-opacity = 0.85
+
+# 操作性
+# 選択したらクリップボードにコピー
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+# 閉じるときの確認ダイアログを出さない
+confirm-close-surface = false
+# ホイールのスクロール速度
+mouse-scroll-multiplier = 2
+# スクロールバックの上限（単位はバイト）
+scrollback-limit = 100000000

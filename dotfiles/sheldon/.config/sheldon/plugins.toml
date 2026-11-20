@@ -1,0 +1,20 @@
+# ~/.config/sheldon/plugins.toml
+# 上から順に読み込まれる。syntax-highlighting は必ず最後。
+shell = "zsh"
+
+[templates]
+# zsh-completions は src/ 以下に補完関数があるのでそこを fpath に足す
+fpath-src = 'fpath=( "{{ dir }}/src" $fpath )'
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+apply = ["fpath-src"]
+
+[plugins.compinit]
+inline = 'autoload -Uz compinit && compinit'
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
