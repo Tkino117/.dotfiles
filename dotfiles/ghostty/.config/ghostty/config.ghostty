@@ -5,9 +5,9 @@
 font-size = 11
 
 # 背景
-background = #0f0f0f
+background =#000000
 window-theme = ghostty
-background-opacity = 0.85
+background-opacity = 0.82
 
 # 操作性
 # 選択したらクリップボードにコピー
